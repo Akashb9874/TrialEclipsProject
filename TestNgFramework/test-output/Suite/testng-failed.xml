@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.Assert.AssertionTestNg">
+        <methods>
+          <include name="hard"/>
+          <include name="Soft"/>
+        </methods>
+      </class> <!-- com.Assert.AssertionTestNg -->
+      <class name="com.TestNg.aaa">
+        <methods>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- com.TestNg.aaa -->
+      <class name="com.TestNg.AssertJava">
+        <methods>
+          <include name="Login"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- com.TestNg.AssertJava -->
+      <class name="com.TestNg.NewTest">
+        <methods>
+          <include name="Test"/>
+        </methods>
+      </class> <!-- com.TestNg.NewTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

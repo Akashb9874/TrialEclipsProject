@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="0" failed="0" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-31T04:33:52Z" name="Suite" finished-at="2022-08-31T04:33:52Z" duration-ms="98">
+    <groups>
+    </groups>
+    <test started-at="2022-08-31T04:33:52Z" name="Test" finished-at="2022-08-31T04:33:52Z" duration-ms="98">
+      <class name="com.Assert.AssertionTestNg">
+        <test-method signature="Soft()[pri:0, instance:com.Assert.AssertionTestNg@5cdec700]" started-at="2022-08-31T10:03:52Z" name="Soft" finished-at="2022-08-31T10:03:52Z" duration-ms="3" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Soft -->
+        <test-method signature="hard()[pri:0, instance:com.Assert.AssertionTestNg@5cdec700]" started-at="2022-08-31T10:03:52Z" name="hard" finished-at="2022-08-31T10:03:52Z" duration-ms="3" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hard -->
+      </class> <!-- com.Assert.AssertionTestNg -->
+      <class name="com.TestNg.AssertJava">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.TestNg.AssertJava@7d3d101b]" started-at="2022-08-31T10:03:13Z" name="Login" finished-at="2022-08-31T10:03:13Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 100
+Current browser version is 104.0.5112.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+  (Driver info: chromedriver=100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}),platform=Windows NT 10.0.19044 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.25 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'AkashBhalerao-1999', ip: '192.168.43.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 100
+Current browser version is 104.0.5112.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+  (Driver info: chromedriver=100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}),platform=Windows NT 10.0.19044 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.25 seconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'AkashBhalerao-1999', ip: '192.168.43.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at com.TestNg.AssertJava.Login(AssertJava.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="BeforeSuite" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.TestNg.aaa@6cdba6dc]" started-at="2022-08-31T10:03:52Z" name="Login" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="LunchSite()[pri:0, instance:com.TestNg.AssertJava@7d3d101b]" started-at="2022-08-31T10:03:52Z" name="LunchSite" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LunchSite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="beforeTest" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="LunchSite()[pri:0, instance:com.TestNg.aaa@6cdba6dc]" started-at="2022-08-31T10:03:52Z" name="LunchSite" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LunchSite -->
+        <test-method signature="doLogin()[pri:0, instance:com.TestNg.AssertJava@7d3d101b]" started-at="2022-08-31T10:03:52Z" name="doLogin" finished-at="2022-08-31T10:03:52Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="DoVerify()[pri:0, instance:com.TestNg.AssertJava@7d3d101b]" started-at="2022-08-31T10:03:52Z" name="DoVerify" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoVerify -->
+        <test-method is-config="true" signature="Dologout()[pri:0, instance:com.TestNg.AssertJava@7d3d101b]" started-at="2022-08-31T10:03:52Z" name="Dologout" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dologout -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="AfterTest" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method is-config="true" signature="Dologout()[pri:0, instance:com.TestNg.aaa@6cdba6dc]" started-at="2022-08-31T10:03:52Z" name="Dologout" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dologout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestNg.AssertJava@7d3d101b]" started-at="2022-08-31T10:03:52Z" name="tearDown" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="afterSuite" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TestNg.aaa@6cdba6dc]" started-at="2022-08-31T10:03:52Z" name="tearDown" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestNg.AssertJava -->
+      <class name="com.TestNg.aaa">
+        <test-method signature="doLogin()[pri:0, instance:com.TestNg.aaa@6cdba6dc]" started-at="2022-08-31T10:03:52Z" name="doLogin" finished-at="2022-08-31T10:03:52Z" duration-ms="2" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="DoVerify()[pri:0, instance:com.TestNg.aaa@6cdba6dc]" started-at="2022-08-31T10:03:52Z" name="DoVerify" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoVerify -->
+      </class> <!-- com.TestNg.aaa -->
+      <class name="com.TestNg.NewTest">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="BeforeClass" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="BeforeMethod" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="Test()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="Test" finished-at="2022-08-31T10:03:52Z" duration-ms="2" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="AfterMethod" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:com.TestNg.NewTest@30c8681]" started-at="2022-08-31T10:03:52Z" name="AfterClass" finished-at="2022-08-31T10:03:52Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.TestNg.NewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
